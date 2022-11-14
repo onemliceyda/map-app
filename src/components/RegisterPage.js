@@ -15,6 +15,7 @@ const RegisterPage = () => {
       localStorage.setItem("Email",JSON.stringify(email));
       localStorage.setItem("Password",JSON.stringify(password));
       localStorage.setItem("Name",JSON.stringify(name));
+      localStorage.setItem("isLogged",true)
       navigate("/homepage")
      }
   }
