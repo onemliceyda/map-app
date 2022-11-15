@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Çankaya",
+    "latitude": "39.9179",
+    "longitude": "32.86268",
+    "population": 5270575,
+    "region": "İç Anadolu"
+  },
+  {
+    "id": 2,
+    "name": "Kızılay",
+    "latitude": "39.9208",
+    "longitude": " 32.8539",
+    "region": "İç Anadolu"
+  },
+  {
+    "id": 3,
+    "name": "Keçiören-Şelale",
+    "latitude": "39.9294",
+    "longitude": "32.8548",
+    "region": "İç Anadolu"
+  },
+  {
+    "id": 4,
+    "name": "Sıhhiye",
+    "latitude": "39.9284",
+    "longitude": "32.8548",
+    "region": "İç Anadolu"
+  },
+  {
+    "id": 5,
+    "name": "AOÇ",
+    "latitude": "39.9463",
+    "longitude": "32.8047",
+    "region": "İç Anadolu"
+  }
+]

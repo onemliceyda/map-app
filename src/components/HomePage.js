@@ -1,12 +1,15 @@
 import React from "react"
 import { useNavigate } from "react-router"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
+import ankaraDistricts from "../data/ankaraDistricts.json"
 
 const HomePage = () => {
+  console.log(ankaraDistricts)
+
   return (
     <MapContainer
       center={[42.585444, 13.257684]}
-      zoom={6}
+      zoom={13}
       scrollWheelZoom={true}
     >
       <TileLayer
@@ -14,11 +17,9 @@ const HomePage = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      <Marker position={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
+      {ankaraDistricts.map((ankara) => (
+        <Marker key={ankara.id} position={[ankara.latitude, ankara.longitude]}></Marker>
+      ))}
     </MapContainer>
   )
 }
