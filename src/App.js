@@ -4,7 +4,6 @@ import LoginPage from "./components/LoginPage"
 import RegisterPage from "./components/RegisterPage"
 import HomePage from "./components/HomePage"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-
 function App() {
   const login = localStorage.getItem("isLogged")
   console.log(login)
@@ -25,6 +24,7 @@ function App() {
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/homepage" element={<HomePage />} />
+            <Route path="/" element={<RegisterPage />} />
           </Routes>
         </BrowserRouter>
       )}
