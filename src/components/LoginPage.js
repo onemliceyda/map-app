@@ -13,8 +13,10 @@ const LoginPage = () => {
     if (email === loggedEmail && password === loggedPassword) {
       localStorage.setItem("isLogged",true)
       navigate("/homepage")
+  
+
     } else {
-      alert("Wrong e-mail or password!")
+      alert("Please fill in each field correctly!")
     }
   }
   const handleClick = () => {

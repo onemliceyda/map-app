@@ -15,16 +15,17 @@ function App() {
             <Route path="/" element={<LoginPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
+
             <Route path="/homepage" element={<HomePage />} />
           </Routes>
         </BrowserRouter>
       ) : (
         <BrowserRouter>
           <Routes>
-            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/" element={<LoginPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
             <Route path="/homepage" element={<HomePage />} />
-            <Route path="/" element={<RegisterPage />} />
           </Routes>
         </BrowserRouter>
       )}

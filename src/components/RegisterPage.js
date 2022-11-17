@@ -6,11 +6,11 @@ const RegisterPage = () => {
   const [password, setPassword] = useState("")
   const [name, setName] = useState("")
   const navigate = useNavigate()
-  
+  localStorage.getItem("isLogged",false)
   const handleSubmit = (e) => {
     e.preventDefault()
     if(!email|| !password ){
-      alert("Please fill every field!")
+      alert("Please fill in each field correctly!")
      }else{
       localStorage.setItem("Email",JSON.stringify(email));
       localStorage.setItem("Password",JSON.stringify(password));
